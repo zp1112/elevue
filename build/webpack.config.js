@@ -17,13 +17,13 @@ module.exports = {
   },
   module: {
     // only lint local *.vue files
-    preLoaders: [
-      {
-        test: /\.vue$/,
-        loader: 'eslint',
-        exclude: /node_modules/
-      }
-    ],
+    // preLoaders: [
+    //   {
+    //     test: /\.vue$/,
+    //     loader: 'eslint',
+    //     exclude: /node_modules/
+    //   }
+    // ],
     // but use vue-loader for all *.vue files
     loaders: [
       // 使用vue-loader 加载 .vue 结尾的文件
@@ -41,7 +41,8 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.vue'],
     alias: {
-      vue: 'vue/dist/vue.js'
+      vue: 'vue/dist/vue.js',
+      components: path.resolve(__dirname, '../app/components')
     }
   },
   plugins: [
