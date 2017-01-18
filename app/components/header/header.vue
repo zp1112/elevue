@@ -1,0 +1,29 @@
+<template>
+  <div class="header">
+    <h1>{{ msg }}</h1>
+    <span class="icon-check_circle"></span>
+  </div>
+</template>
+
+<script type="text/ecmascript-6">
+
+export default {
+  data() {
+    return {
+      // note: changing this line won't causes changes
+      // with hot-reload because the reloaded component
+      // preserves its current state and we are modifying
+      // its initial state.
+      msg: '我是 Header!'
+    };
+  }
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="stylus" rel="stylesheet/stylus">
+
+h1
+  color: #42b983
+
+</style>

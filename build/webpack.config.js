@@ -35,6 +35,18 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel',
         exclude: /node_modules/
+      },
+      // 配置styl-loader
+      { test: /\.styl$/,
+        loader: 'vue-style-loader!css-loader!stylus-loader'
+      },
+      // 配置图片loader
+      { test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url'
+      },
+      // 配置字体loader
+      { test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url'
       }
     ]
   },

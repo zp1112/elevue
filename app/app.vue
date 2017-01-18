@@ -1,26 +1,18 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <span class="icon-check_circle"></span>
-    <hello></hello>
+  <div class="app">
+    <apphead></apphead>
+    <tab></tab>
   </div>
 </template>
 
 <script>
-import Hello from './components/hello.vue';
+import Apphead from './components/header/header.vue';
+import Tab from './components/tab/tab.vue';
 
 export default {
-  data() {
-    return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      msg: 'App Components!'
-    };
-  },
   components: {
-    Hello
+    Apphead,
+    Tab
   }
 };
 </script>

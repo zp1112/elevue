@@ -7,8 +7,19 @@
   "plugins": [
     "html"
   ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "build/webpack.config.js"
+      }
+    }
+  },
   "parser": "babel-eslint",
   "rules": {
+    "import/extensions": ["error", "always", {
+      "js": "never",
+      "vue": "never"
+    }],
     "quotes": [2, "single"],
     "semi": 2,
     "max-len": [1, 150, 2],

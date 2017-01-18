@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="seller">
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      msg: 'Goods!'
+      msg: 'Seller!'
     };
   }
 };
