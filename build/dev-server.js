@@ -3,7 +3,7 @@ import express from 'express';
 import webpack from 'webpack';
 import appData from '../data.json';
 
-const config = process.env.NODE_ENV === 'production' ? require('./webpack.config') : require('./webpack.dev.config');
+const config = process.env.NODE_ENV === 'production' ? require('./webpack.config') : require('./webpack.config.dev');
 
 // 创建一个express实例
 const app = express();

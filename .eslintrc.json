@@ -9,16 +9,20 @@
   ],
   "settings": {
     "import/resolver": {
-      "webpack": {
-        "config": "build/webpack.config.js"
+      "node": {
+        "extensions": [".js", ".vue", ".styl"]
       }
+    },
+    "import/alias":{
+      "components": "./app/components"
     }
   },
   "parser": "babel-eslint",
   "rules": {
     "import/extensions": ["error", "always", {
       "js": "never",
-      "vue": "never"
+      "vue": "never",
+      "styl": "never"
     }],
     "quotes": [2, "single"],
     "semi": 2,
