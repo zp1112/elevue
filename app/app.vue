@@ -8,7 +8,7 @@
 
 <script>
 import axios from 'axios';
-import Apphead from 'components/header/header';
+import Apphead from './components/header/header';
 import Tab from './components/tab/tab';
 
 export default {

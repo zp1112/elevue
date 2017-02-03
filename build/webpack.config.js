@@ -54,7 +54,7 @@ module.exports = {
     extensions: ['', '.js', '.vue', '.styl'],
     alias: {
       vue: 'vue/dist/vue.js',
-      components: path.join(__dirname, '../app/components')
+      components: path.resolve(__dirname, '../app/components')
     }
   },
   plugins: [
